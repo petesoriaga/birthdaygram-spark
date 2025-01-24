@@ -7,7 +7,7 @@ import { Cake } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 export const LoginForm = () => {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("gabrielmunsayac");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { toast } = useToast();
