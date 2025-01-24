@@ -8,7 +8,7 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const LoginForm = () => {
   const [username, setUsername] = useState("gabrielmunsayac");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("01252006");
   const navigate = useNavigate();
   const { toast } = useToast();
 
