@@ -1,4 +1,6 @@
 import { BirthdayPost } from "@/components/post/BirthdayPost";
+import { ChatSection } from "@/components/chat/ChatSection";
+import { useToast } from "@/hooks/use-toast";
 
 const Home = () => {
   const posts = [
@@ -20,10 +22,15 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-screen-md mx-auto space-y-6 px-4">
-        {posts.map((post, index) => (
-          <BirthdayPost key={index} {...post} />
-        ))}
+      <div className="max-w-screen-xl mx-auto px-4 flex gap-6">
+        <div className="flex-1 space-y-6">
+          {posts.map((post, index) => (
+            <BirthdayPost key={index} {...post} />
+          ))}
+        </div>
+        <div className="w-[400px] sticky top-8 h-[calc(100vh-4rem)]">
+          <ChatSection />
+        </div>
       </div>
     </div>
   );
