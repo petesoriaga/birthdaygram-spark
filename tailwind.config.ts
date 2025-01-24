@@ -25,7 +25,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         birthday: {
-          pink: "#FFD1DC",
+          blue: "#D3E4FD",
           purple: "#E6E6FA",
           gold: "#FFD700",
         },

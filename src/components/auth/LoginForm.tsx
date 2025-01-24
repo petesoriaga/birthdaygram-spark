@@ -33,7 +33,7 @@ export const LoginForm = () => {
   return (
     <Card className="w-[350px] bg-white/80 backdrop-blur-sm">
       <CardHeader className="text-center">
-        <CardTitle className="flex items-center justify-center gap-2 text-3xl font-bold text-birthday-pink">
+        <CardTitle className="flex items-center justify-center gap-2 text-3xl font-bold text-birthday-blue">
           <Cake className="h-8 w-8" />
           BirthdayGram
         </CardTitle>
@@ -45,18 +45,18 @@ export const LoginForm = () => {
             placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="border-birthday-purple"
+            className="border-birthday-blue"
           />
           <Input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="border-birthday-purple"
+            className="border-birthday-blue"
           />
           <Button
             type="submit"
-            className="w-full bg-birthday-pink hover:bg-birthday-purple text-white"
+            className="w-full bg-birthday-blue hover:bg-birthday-purple text-white"
           >
             Log In
           </Button>
